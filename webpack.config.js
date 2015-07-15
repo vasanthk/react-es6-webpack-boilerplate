@@ -29,23 +29,23 @@ module.exports = {
     'webpack/hot/dev-server',
     './scripts/index'
   ],
-  devtool: 'eval-source-map',
   output: {
     path: __dirname,
     filename: 'bundle.js',
-    publicPath: '/scripts/'
+    publicPath: '/static/'
   },
+  resolve: {
+    extensions: ['', '.js']
+  },
+  devtool: 'eval-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
-  resolve: {
-    extensions: ['', '.js']
-  },
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loaders: ['react-hot', 'babel'],
         include: path.join(__dirname, 'scripts')
       }

@@ -1,9 +1,8 @@
 /* eslint-disable no-var */
-var path = require('path');
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
-  devtool: 'source-map',
   entry: './scripts/index',
   output: {
     path: path.join(__dirname, 'dist'),
@@ -11,8 +10,9 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: [ '', '.js' ]
+    extensions: ['', '.js']
   },
+  devtool: 'source-map',
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
@@ -27,10 +27,12 @@ module.exports = {
     })
   ],
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'scripts')
-    }]
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel'],
+        include: path.join(__dirname, 'scripts')
+      }
+    ]
   }
 };
