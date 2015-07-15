@@ -20,7 +20,7 @@ Open http://localhost:5000
 
 ### Linting
 
-ESLint with React lintng options have been enabled.
+ESLint with React linting options have been enabled.
 
 ```
 npm run lint
