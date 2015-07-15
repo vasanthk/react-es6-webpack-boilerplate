@@ -1,37 +1,41 @@
 {
-  "name": "react-flux-router-app",
+  "name": "react-es6-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "A sample react app featuring flux and react router",
+  "description": "Boilerplate for kick starting a React Project with ES6 (Babel) and Hot reloader using Webpack.",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.production.js",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vasanthk/react-flux-router-app.git"
+    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate.git"
   },
   "keywords": [
     "react",
-    "flux",
-    "router"
+    "es6",
+    "babel",
+    "webpack"
   ],
   "author": "Vasanth Krishnamoorthy (http://www.vasanthk.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vasanthk/react-flux-router-app/issues"
+    "url": "https://github.com/vasanthk/react-es6-webpack-boilerplate/issues"
   },
-  "homepage": "https://github.com/vasanthk/react-flux-router-app",
+  "homepage": "https://github.com/vasanthk/react-es6-webpack-boilerplate",
   "dependencies": {
-    "jsx-loader": "^0.13.2",
-    "normalizr": "^0.1.3",
-    "react": "^0.13.3",
-    "react-router": "^0.13.3",
-    "superagent": "^1.2.0"
+    "babel-runtime": "^5.1.10",
+    "react": "^0.13.2"
   },
   "devDependencies": {
-    "node-libs-browser": "^0.5.2",
-    "react-hot-loader": "^1.2.7",
-    "webpack": "^1.9.10",
-    "webpack-dev-server": "^1.9.0"
+    "babel-core": "^5.4.5",
+    "babel-eslint": "^3.1.6",
+    "babel-loader": "^5.0.0",
+    "eslint": "^0.21.2",
+    "eslint-plugin-react": "^2.3.0",
+    "react-hot-loader": "^1.1.5",
+    "webpack": "^1.8.4",
+    "webpack-dev-server": "^1.8.0"
   }
 }
