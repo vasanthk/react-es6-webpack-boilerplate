@@ -32,7 +32,7 @@ module.exports = {
   output: {
     path: __dirname,
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/scripts/'
   },
   resolve: {
     extensions: ['', '.js']
