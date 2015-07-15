@@ -53,7 +53,7 @@ module.exports = {
   output: {
     path: __dirname,
     filename: 'bundle.js',
-    publicPath: '/scripts/'
+    publicPath: '/static/'
   },
   resolve: {
     extensions: ['', '.js']
