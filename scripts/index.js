@@ -1,4 +1,7 @@
-let React = require('react');
-let App = require('./App');
+import React from 'react';
+import App from './App';
 
-React.render(<App />, document.body);
+React.render(
+  <App />,
+  document.body
+);
