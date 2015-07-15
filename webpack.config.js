@@ -12,7 +12,7 @@
  * The source map file will only be downloaded if you have source maps enabled and your dev tools open.
  *
  * HotModuleReplacementPlugin()
- * Hot Module Replacement (HMR) exchanges, adds, or removes modules while an application is running without a page reload.
+ * Hot Module Replacement (HMR) exchanges, adds or removes modules while an application is running without page reload.
  *
  * NoErrorsPlugin()
  * Hot loader is better when used with NoErrorsPlugin and hot/only-dev-server since it eliminates page reloads
