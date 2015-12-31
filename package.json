@@ -1,6 +1,6 @@
 {
   "name": "react-es6-webpack-boilerplate",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Boilerplate for kick starting a React Project with ES6 (Babel) and Hot reloader using Webpack.",
   "main": "index.js",
   "scripts": {
@@ -25,8 +25,9 @@
   },
   "homepage": "https://github.com/vasanthk/react-es6-webpack-boilerplate",
   "dependencies": {
-    "babel-runtime": "^6.3.19",
-    "react": "^0.13.2"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "babel-runtime": "^6.3.19"
   },
   "devDependencies": {
     "babel-core": "^6.3.21",
